@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+
+@screen lg {
+    #main-wrapper {
+        clip-path: polygon(0px 0px, 100.00% 0px, 90% 100%, 0px 100%);
+    }
+}
+
+@tailwind utilities;

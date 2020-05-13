@@ -4,7 +4,7 @@
   "description": "Rowan Online",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,8 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
+    "autoprefixer": "^9.7.6",
+    "postcss-cli": "^7.1.1",
     "tailwindcss": "^1.4.6"
   }
 }
