@@ -3,8 +3,58 @@
 
 @screen lg {
     #main-wrapper {
-        clip-path: polygon(0px 0px, 100.00% 0px, 90% 100%, 0px 100%);
+        clip-path: polygon(0px 0px, 90% 0px, 100% 100%, 0px 100%);
     }
+}
+
+@screen md {
+    .sidenavLayout aside {
+        overflow: visible;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background: none;
+        height: 100vh;
+        z-index: 0;
+    }
+
+    .sidenavLayout aside::after {
+        background: -webkit-gradient(linear,left bottom,left top,from(#fff),to(#F7FAFC));
+        background: linear-gradient(0deg,#fff,#F7FAFC);
+        z-index: -1;
+    }
+    .sidenavLayout nav>ul>li {
+        padding: 1rem 0;
+    }
+    .hero-transparent img {
+        mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
+    }
+    #campaign {
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+        z-index: 2;
+    }
+    #campaign + footer::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: 0;
+        width: 999em;
+        height: 100%;
+        clip-path: polygon(0 90%, 100% 100%, 0 100%);
+        background:inherit;
+        z-index: -1;
+    }
+}
+
+.sidenavLayout aside::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 999em;
+    height: 100%;
+    background: #F7FAFC;
+    z-index: -1;
 }
 
 @tailwind utilities;
