@@ -30,19 +30,40 @@
         mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
     }
     #campaign {
-        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+        position: relative;
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
         z-index: 2;
     }
-    #campaign + footer::before {
+    #campaign::before {
         content: "";
         position: absolute;
-        top: -20px;
+        bottom: 0;
         right: 0;
-        width: 999em;
+        width: 100%;
         height: 100%;
         clip-path: polygon(0 90%, 100% 100%, 0 100%);
-        background:inherit;
+        background: #FFCC00;
         z-index: -1;
+    }
+    .collection-links__texture {
+        top: 15px;
+        right: 15px;
+    }
+
+    .form-context--reversed::after, .form-context::after {
+        z-index: 1;
+    }
+    .form-context--reversed::after, .form-context::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://admissions.rowan.edu/svgs/texture-form-context.svg);
+        background-size: auto 100%;
+        background-position: 50% 50%;
+        content: "";
+        opacity: 0.5;
     }
 }
 
@@ -55,6 +76,18 @@
     height: 100%;
     background: #F7FAFC;
     z-index: -1;
+}
+
+.collection-links__texture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 248px;
+    height: 188px;
+}
+
+.collection-links.collection-links--dark {
+    fill: #57150b;
 }
 
 @tailwind utilities;
