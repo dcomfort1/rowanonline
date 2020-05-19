@@ -51,7 +51,7 @@
     }
 
     .form-context--reversed::after, .form-context::after {
-        z-index: 1;
+        z-index: -1;
     }
     .form-context--reversed::after, .form-context::after {
         position: absolute;
@@ -63,8 +63,20 @@
         background-size: auto 100%;
         background-position: 50% 50%;
         content: "";
-        opacity: 0.5;
+        opacity: 0.25;
     }
+}
+
+@tailwind utilities;
+
+@responsive {
+    .hide {
+        display: none;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .sidenavLayout aside::after {
@@ -89,5 +101,3 @@
 .collection-links.collection-links--dark {
     fill: #57150b;
 }
-
-@tailwind utilities;
