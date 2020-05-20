@@ -1,74 +1,434 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Rowan Online</title>
+    <link rel="stylesheet" href="public/build/tailwind.css">
+</head>
+<body class="border-t-8 border-gold-500 bg-white sidenavLayout min-h-screen">
+    <div class="container flex md:px-8 min-h-screen">
+        <aside class="flex-col pl-2 md:pl-0 w-16 md:w-64 relative">
+            <a class="z-10 md:px-8 px-4" href="index.html">
+                <img class="hide md:block h-24 lg:h-16 xl:h-24" src="images/RowanOnline_power.png" alt="Rowan Online logo in which the O of Online is a power button">
+                <img class="md:hide h-8" src="images/RowanOnline_power_initials.png" alt="Rowan Online logo in which the O of Online is a power button">
+            </a>
+            <nav class="sticky w-8 md:w-64 mt-16">
+                <ul class="hide md:block text-md font-semibold text-gray-900 uppercase tracking-wider leading-loose">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Rowan Online</a></li>
+                    <li>
+                        Programs
+                        <ul class="pl-1 text-sm font-normal text-gray-600 normal-case leading-slug tracking-wide">
+                            <li>Entrepreneurship</li>
+                            <li>Computing Informatics</li>
+                            <li>Construction Management</li>
+                            <li><a href="hr.html">Human Resource Management</a></li>
+                            <li>Management Information Systems</li>
+                            <li>Psychology</li>
+                        </ul>
+                    </li>
+                    <li><a href="apply.html">Admissions</a></li>
+                    <li>Paying for College</li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="flex-1">
+            <section class="relative w-full h-64 relative pb-2/3 hero-transparent">
+                <img class="rounded-lg md:rounded-none absolute h-full w-full object-cover" src="https://sites.rowan.edu/bursar/_images/Bunce%20Daisy.jpg" alt="Bunce Hall with Black-Eyed Susan in front">
+            </section>
+            <section class="md:mt-8 px-4 md:px-8 pb-4">
+                <h1 class="text-4xl font-medium tracking-wide text-gold-900 md:mb-8">Bachelor of Science in Human Resource Management</h1>
+                <p>In an economic world in which competitive advantage is increasingly based on knowledge and creativity, effective Human Resources functions are crucial for organizations that want to improve their productivity. The Rowan Online Human Resources Management requirements prepare graduates for the HR profession using a blend of classroom, extra-, and co-curricular experiences, such as internships and project-based learning assignments. Our program is grounded in the values of workplace equity and respect and recognition for contributions of the diverse American workforce.</p>
+                <p>Human resource management consists of planned organizational activities designed to improve employee efficiency and equity, such as staffing, compensation, and training.</p>
+                
+                <hr class="mb-4">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+                <h2 class="text-3xl font-medium tracking-wide text-gold-900 md:mb-8">Potential Careers</h2>
+                <p>
+                    <ul class="mt-4 list-none">
+                        <li class="mt-3 flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
+                            <span class="-mt-px">Human Resource Managers</span>
+                        </li>
+                        <li class="mt-3 flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
+                            <span class="-mt-px">Hiring Managers</span>
+                        </li>
+                        <li class="mt-3 flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
+                            <span class="-mt-px">Business Administrators</span>
+                        </li>
+                        <li class="mt-3 flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
+                            <span class="-mt-px">Benefits Specialists</span>
+                        </li>
+                    </ul>
+                </p>
 
-    <title>Rowan Online</title>
-  </head>
-  <body>
+                <hr class="mb-4">
 
-<!-- Top Header -->
-<div class="container">
-  <div class="row" style="background: white; color:#550000; text-align:center; margin: 0 auto; font-size:2.5em; font-weight:bold; font-family: Georgia, 'Times New Roman', Times, serif;">
-    <div class="col-sm">
-	<img alt="RU Logo" src="images/logo-ru.png" class="img-fluid" style="max-height:100px; ">
+                <h2 class="text-3xl font-medium tracking-wide text-gold-900 md:mb-8">Courses and Program Guide</h2>
+                <p class="mb-2">All Rowan Online programs have been designed to be delivered in an accelerated format. These courses are designed to help you get the information you need at a pace you'll love.</p>
+
+                <div class="bg-navy-100 border-l-4 border-navy-500 text-navy-900 p-4 my-8 rounded" role="alert">
+                    <p class="font-bold">Accelerating Your Learning</p>
+                    <p>Rowan Online uses a 7-week format for courses as opposed to a traditional 15 week format. Rather than taking five or six courses all at the same time, take two or three and go further in-depth and get the education you deserve.</p>
+                </div>
+
+                <hr class="mb-4">
+
+                <table class="table-auto w-full">
+                  <thead>
+                    <th class="w-1/2 px-4 py-2">Course Name</th>
+                    <th class="w-1/2 px-4 py-2">Course Number</th>
+                    <th class="w-1/2 px-4 py-2">Credits</th>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-navy-100 border-navy-500 text-navy-900">
+                      <th colspan="3" class="text-left">Freshman Year</th>
+                    </tr>
+                    <tr class="bg-navy-100 border-navy-500 text-navy-900">
+                      <th colspan="3" class="text-left">Fall</th>
+                    </tr>
+                    <tr class="bg-navy-100 border-navy-500 text-navy-900">
+                      <th colspan="3" class="text-left">7A</th>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">7B</th>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">Spring</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">7A</th>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">7B</th>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">Sophomore Year</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">Fall</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">7A</th>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">7B</th>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">Spring</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">7A</th>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">7B</th>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">Junior Year</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">Fall</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">7A</th>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">7B</th>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">Spring</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">7A</th>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">7B</th>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">Senior Year</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">Fall</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">7A</th>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">7B</th>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">Spring</th>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">7A</th>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <th colspan="3" class="text-left">7B</th>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Intro to Basket Weaving</td>
+                      <td>ABC 01234</td>
+                      <td>3</td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+                
+                
+            </section>
+        </main>
+        
     </div>
-    <div class="col-sm"  style="max-height:100px; padding-top:20px;">
-	Rowan Online
-    </div>
-    <div class="col-sm">
-	<img alt="RCSJ Logo" src="images/logo-rcsj.png" class="img-fluid" style="max-height:100px; ">
-    </div>
-  </div>
-</div>
-
-<!-- Menu -->
-<div style="background: #550000; color:white; text-align:center; padding:10px; font-size:1.25em;">
-Home | About Us | Other
-</div>
-
-<!-- Hero Image -->
-<div class="img-fluid" style="opacity: 0.9; background-image: url('images/hero-image-v2.jpg'); background-position: center center;background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
-<div style="background: black; opacity: 0.9;">
-<br/><br/><br/><br/><br/><br/><br/>
-<div style="text-shadow: 2px 2px #FF0000; color:white; text-align:center; font-size:4em; padding:20px; font-weight:bold; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-Earn your 4-year degree online <br/> for less than $40,000!
-</div>
-<br/><br/><br/><br/><br/><br/><br/>
-</div>
-</div>
-
-<br/><br/>
-<div class="container">
-
-  <div class="row" style="border: 1px solid black; border-radius: 5px; padding: 10px;">
-    <div class="col-sm">
-      <h1><b>Human Resources (HR) Management</b></h1>
-      <p style="font-size: 1.5em;">Earn your HR Management degree online, from the comfort of your home. Become the next HR Director or work behind the scenes in Human Resources. The opportunities are endless.</p>
-    </div>
-    <div class="col-sm" >
-      <img class="img-fluid" alt="Student on a laptop" src="images/men-1979261_640.jpg" >
-    </div>
-  </div>
-
-<br/>
-
-</div>
-
-<!-- Bottom Footer -->
-<div style="background: #550000; color:white; text-align:center; padding: 10px; margin-top:20px;">
-Copyright 2020
-</div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+    <footer id="campaign" class="form-context py-16 md:py-32 lg:py-64 w-full bg-gold-200 text-gold-900">
+        <div class="container flex">
+            <h2 class="uppercase leading-loose tracking-wide text-brown-500 font-medium text-4xl">Let's Keep in Touch</h2>
+        </div>          
+        <div class="container flex bg-gray-100 p-4 md:p-8 lg:p-16">
+            <div id="form_1fc2be6d-0300-4a61-afa2-aa3d9cb02991" class="form-context__form">Loading...</div><script async="async" src="https://apply.rowan.edu/register/?id=1fc2be6d-0300-4a61-afa2-aa3d9cb02991&amp;output=embed&amp;div=form_1fc2be6d-0300-4a61-afa2-aa3d9cb02991">/**/</script>
+        </div>
+    </footer>
+    <footer class="relative py-16 w-full bg-gold-500 text-white">
+        <div class="flex items-center justify-center font-bold uppercase text-xl my-4">© 2020 Rowan Online.</div>
+        <div class="text-center italic">Rowan Online is an exclusive partnership between <a href="https://rowan.edu">Rowan University </a> and <a href="https://rcsj.edu"> Rowan College of South Jersey</a>.</div>
+    </footer>
+</body>
 </html>

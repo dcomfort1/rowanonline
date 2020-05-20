@@ -639,6 +639,11 @@ video {
 }
 
 @media (min-width: 768px) {
+  .form-context__form label {
+    font-size: 16px;
+    letter-spacing: .14062rem;
+  }
+
   .sidenavLayout aside {
     overflow: visible;
     position: -webkit-sticky;
@@ -659,8 +664,8 @@ video {
   }
 
   .hero-transparent img {
-    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
-            mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 95%, transparent 100%);
+            mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 95%, transparent 100%);
   }
 
   #campaign {
@@ -21438,6 +21443,81 @@ html {
 
 .collection-links.collection-links--dark {
   fill: #57150b;
+}
+
+div.form_question .form_label, div.form_question label {
+  display: block;
+}
+
+.form-context__form label.form_label {
+  padding-left: 0;
+}
+
+div.form_page input, div.form_page label {
+  vertical-align: middle;
+}
+
+.form-context__form label {
+  position: relative;
+  width: 100%;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  font-family: t26-carbon,monospace;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: .125rem;
+  margin-bottom: 8px;
+}
+
+.base-cta-primary--black:focus, .base-cta-primary--black:hover, .form-context__form button:focus, .form-context__form button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.base-cta-primary--black, .form-context__form button {
+  font-family: t26-carbon,monospace;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: .13437rem;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  padding: 15px 32px;
+  margin-top: 20px;
+  color: #000;
+  text-align: center;
+  border: 1.5px solid #000;
+  border-radius: 9999px;
+  background-color: transparent;
+  transition-property: color,background-color;
+  transition-duration: .25s;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+.form-context__form input, .form-context__form select {
+  font-family: acumin-pro,sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: .0375rem;
+  padding: 16px;
+  font-size: 16px;
+  border: 1.5px solid #000;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+div.form_page input[type=password], div.form_page input[type=text], div.form_page input[type=email], div.form_page input[type=tel], div.form_page input:not([type]), div.form_page select, div.form_page textarea {
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 @media (min-width: 576px) {
