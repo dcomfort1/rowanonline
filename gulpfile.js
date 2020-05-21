@@ -1,8 +1,8 @@
 const webpack = require('webpack')
 const webpackConfig = require('./webpack.config.js')
 const nunjucks = require('gulp-nunjucks-render')
+const gulp = require('gulp')
 
-  
 function assets(cb) {
     return new Promise((resolve, reject) => {
         webpack(webpackConfig, (err, stats) => {
@@ -18,16 +18,14 @@ function assets(cb) {
 }
 
 function markup(cb) {
-    return gulp.src('src/views/**/*.+(html|njk|nunjucks)')
-  // Renders template with nunjucks
-  .pipe(nunjucksRender({
+    return gulp.src('src/views/*.+(html|njk|nunjucks)')
+  .pipe(nunjucks({
       path: ['src/views/templates']
     }))
-  // output files in app folder
   .pipe(gulp.dest('public/build/app'))
 }
 
 
 exports.assets = assets;
 exports.markup = markup;
-exports.default = gulp.series(assets, markup)
+exports.default = gulp.series(markup, assets)

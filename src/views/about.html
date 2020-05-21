@@ -1,183 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Rowan Online</title>
-    <link rel="stylesheet" href="public/build/tailwind.css">
-</head>
-<body class="border-t-8 border-gold-500 bg-white sidenavLayout min-h-screen">
-    <div class="container flex md:px-8 min-h-screen">
-        <aside class="flex-col pl-2 md:pl-0 w-16 md:w-64 relative">
-            <a class="z-10 md:px-8 px-4" href="index.html">
-                <img class="hide md:block h-24 lg:h-16 xl:h-24" src="images/RowanOnline_power.png" alt="Rowan Online logo in which the O of Online is a power button">
-                <img class="md:hide h-8" src="images/RowanOnline_power_initials.png" alt="Rowan Online logo in which the O of Online is a power button">
-            </a>
-            <nav class="sticky w-8 md:w-64 mt-16">
-                <ul class="text-md font-semibold text-gray-900 uppercase tracking-wider leading-loose">
-                    <li>
-                        <a href="index.html">
-                            <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="inline h-3">
-                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" class="text-gray-900 fill-current">
-                                    <g id="icon-shape">
-                                        <path d="M17,10 L20,10 L10,0 L0,10 L3,10 L3,20 L17,20 L17,10 Z M8,14 L12,14 L12,20 L8,20 L8,14 Z" id="Combined-Shape"></path>
-                                    </g>
-                                </g>
-                            </svg>
-                            <span class="hide md:inline-block">Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html">
-                            <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="inline h-3">
-                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" class="text-gray-900 fill-current">
-                                    <g id="icon-shape">
-                                        <path d="M2.92893219,17.0710678 C6.83417511,20.9763107 13.1658249,20.9763107 17.0710678,17.0710678 C20.9763107,13.1658249 20.9763107,6.83417511 17.0710678,2.92893219 C13.1658249,-0.976310729 6.83417511,-0.976310729 2.92893219,2.92893219 C-0.976310729,6.83417511 -0.976310729,13.1658249 2.92893219,17.0710678 Z M9,11 L9,10.5 L9,9 L11,9 L11,15 L9,15 L9,11 Z M9,5 L11,5 L11,7 L9,7 L9,5 Z" id="Combined-Shape"></path>
-                                    </g>
-                                </g>
-                            </svg>
-                            <span class="hide md:inline-block">About Rowan Online</span>
-                        </a>
-                    </li>
-                    <li>
-                        <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="inline h-3">
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" class="text-gray-900 fill-current">
-                                <g id="icon-shape">
-                                    <path d="M3.33333333,8 L10,12 L20,6 L10,0 L-5.55111512e-16,6 L10,6 L10,6.5 L10,8 L3.33333333,8 L3.33333333,8 Z M1.33226763e-15,8 L1.33226763e-15,16 L2,13.7777778 L2,9.2 L2,9.2 L1.33226763e-15,8 L1.11022302e-16,8 L1.33226763e-15,8 Z M10,20 L5,16.9999998 L3,15.8 L3,9.8 L10,14 L17,9.8 L17,15.8 L10,20 L10,20 Z" id="Combined-Shape"></path>
-                                </g>
-                            </g>
-                        </svg>
-                        <span class="hide md:inline-block dd__heading">Programs</span>
-                        <ul class="hide pl-1 md:block md:pl-4 text-sm font-normal text-gray-600 normal-case leading-slug tracking-wide">
-                            <li>Entrepreneurship</li>
-                            <li>Computing Informatics</li>
-                            <li>Construction Management</li>
-                            <li><a href="hr.html">Human Resource Management</a></li>
-                            <li>Management Information Systems</li>
-                            <li>Psychology</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="apply.html">
-                            <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="inline h-3">
-                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" class="text-gray-900 fill-current">
-                                    <g id="icon-shape">
-                                        <path d="M11,9 L11,5 L9,5 L9,9 L5,9 L5,11 L9,11 L9,15 L11,15 L11,11 L15,11 L15,9 L11,9 Z M10,20 C15.5228475,20 20,15.5228475 20,10 C20,4.4771525 15.5228475,0 10,0 C4.4771525,0 0,4.4771525 0,10 C0,15.5228475 4.4771525,20 10,20 Z" id="Combined-Shape"></path>
-                                    </g>
-                                </g>
-                            </svg>
-                            <span class="hide md:inline-block">Admissions</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="inline h-3">
-                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" class="text-gray-900 fill-current">
-                                    <g id="icon-shape">
-                                        <path d="M10,20 C15.5228475,20 20,15.5228475 20,10 C20,4.4771525 15.5228475,0 10,0 C4.4771525,0 0,4.4771525 0,10 C0,15.5228475 4.4771525,20 10,20 Z M11,15 L11,17 L9,17 L9,15 L6,15 L6,13 L10.5838882,13 L11.9970707,13 C12.5621186,13 13,12.5522847 13,12 C13,11.4438648 12.5509732,11 11.9970707,11 L10.5838882,11 L8,11 C6.34314575,11 5,9.65685425 5,8 C5,6.34314575 6.34314575,5 8,5 L9,5 L9,3 L11,3 L11,5 L14,5 L14,7 L9.41464715,7 L7.99077797,7 C7.45097518,7 7,7.44771525 7,8 C7,8.55613518 7.44358641,9 7.99077797,9 L9.41464715,9 L12,9 C13.6568542,9 15,10.3431458 15,12 C15,13.6568542 13.6568542,15 12,15 L11,15 Z"></path>
-                                    </g>
-                                </g>
-                            </svg>
-                            <span class="hide md:inline-block">Paying for College</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-        <main class="flex-1">
-            <section class="relative w-full h-64 relative pb-2/3 hero-transparent">
-                <img class="rounded-lg md:rounded-none absolute h-full w-full object-cover" src="https://sites.rowan.edu/bursar/_images/Bunce%20Daisy.jpg" alt="Bunce Hall with Black-Eyed Susan in front">
-            </section>
-            <section class="md:mt-8 px-4 md:px-8 pb-4">
-                <h1 class="text-4xl font-medium tracking-wide text-gold-900 md:mb-8">About Rowan Online</h1>
-                <p><a href="https://rowan.edu">Rowan University</a> and <a href="https://rcsj.edu">Rowan College of South Jersey (RCSJ)</a> have partnered to offer students fully online degree programs at a fraction of the original cost. Upon completion of the program, students will have earned their 2-year RCSJ degree and their 4-year Rowan University degree in their respective fields of study.</p>
-                <div class="bg-navy-100 border-l-4 border-navy-500 text-navy-900 p-4 my-8 rounded" role="alert">
-                    <p class="font-bold">Saving You Money from the Start</p>
-                    <p>Student enrolled in Rowan Online get one locked-in price for all four years. Never worry about tuition increases or unexpected payments again!</p>
-                </div>
+{% extends "main.html" %}
+{% set pagetitle = "About" %}
+{% set img = "https://sites.rowan.edu/bursar/_images/Bunce%20Daisy.jpg" %}
+{% set alt = "Bunce Hall with Black-Eyed Susan in front" %}
 
-                <hr class="mb-4">
+{% block title %}
+How to Apply
+{% endblock %}
 
-                <h2 class="text-3xl font-medium tracking-wide text-gold-900 md:mb-8">A Partnership Like No Other</h2>
-                <p class="mb-2">What happens when one of the nation's top universities and New Jersey's #1 community college join forces? Rowan Online- that's what. Be delighted with top notch instructors, state-of-the-art education, and all at a price that will put a smile on your face.</p>
-                <p class="mb-2">Start your education with faculty from the Best Community College in NJ and end your education at one of the nation's Top Universities. Rowan University and RCSJ are reimagining the world of online education. The future of online education is here; The question is: are you?</p>
-                <div class="flex justify-center">
-                    <div class="my-8 max-w-sm w-full lg:max-w-lg lg:flex rounded">
-                        <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden shadow-lg" style="background-image: url('images/laptop-2838921.jpg')" title="Overhead view of a laptop on a desk">
-                        </div>
-                        <div class="border-r border-b border-l border-gray-200 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal shadow-lg">
-                          <div class="mb-8">
-                            <div class="text-gray-900 font-bold text-xl mb-2">Programs Designed for You</div>
-                            <p class="text-gray-700 text-base">With flexible 7-week courses, you can get the education you want at a pace that you'll love.</p>
-                            <a href="#" class="mt-2 sm:ml-0 sm:mt-1 w-full sm:w-auto inline-flex items-center justify-center px-2 py-2 border border-transparent text-base leading-6 font-semibold rounded-md text-white bg-navy-500 shadow-sm hover:bg-navy-400 focus:outline-none focus:bg-navy-600 transition ease-in-out duration-150 xl:text-lg xl:py-1">
-                                Apply Now →
-                            </a>
-                          </div>
-                        </div>
-                    </div>
-                </div>
+{% block contents %}
+<p><a href="https://rowan.edu">Rowan University</a> and <a href="https://rcsj.edu">Rowan College of South Jersey (RCSJ)</a> have partnered to offer students fully online degree programs at a fraction of the original cost. Upon completion of the program, students will have earned their 2-year RCSJ degree and their 4-year Rowan University degree in their respective fields of study.</p>
+<div class="bg-navy-100 border-l-4 border-navy-500 text-navy-900 p-4 my-8 rounded" role="alert">
+    <p class="font-bold">Saving You Money from the Start</p>
+    <p>Student enrolled in Rowan Online get one locked-in price for all four years. Never worry about tuition increases or unexpected payments again!</p>
+</div>
 
-                <hr class="mb-4">
+<hr class="mb-4">
 
-                <h2 class="text-3xl font-medium tracking-wide text-gold-900 md:mb-8">Options You'll Love</h2>
-                <p class="mb-2">Some of the brightest minds have come together to make online courses that delight. Courses have been designed to fit your life and at seven weeks each, they are made to keep you on track and deliver the highest quality possible. Running on a state-of-the-art system, you can access your courses from your laptop, desktop, or phone anywhere in the world.</p>
-                <p class="mb-2">Convenience doesn't stop outside the classroom, either. Student advisement has been reimagined to make it fast and efficient to get the help you need <span class="font-medium">when you need it</span>; It's faster and easier than ever to get the services you need with the support you deserve.</p>
-                
-                <hr class="mb-4">
-
-                <h2 class="text-3xl font-medium tracking-wide text-gold-900 md:mb-8">Benefits, not Bare-Bones</h2>
-                <p class="mb-2">Online education doesn't have to be bare-bones like at some other institutions. That's why Rowan Online gives you the benefits you deserve as a student.</p>
-                <p>
-                    <ul class="mt-4 list-none">
-                        <li class="mt-3 flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
-                            <span class="-mt-px">Exceptional value at a budget-friendly price</span>
-                        </li>
-                        <li class="mt-3 flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
-                            <span class="-mt-px">Fast, efficient student advisement</span>
-                        </li>
-                        <li class="mt-3 flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
-                            <span class="-mt-px">Access to all RCSJ and Rowan University digital ammenities</span>
-                        </li>
-                        <li class="mt-3 flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
-                            <span class="-mt-px">Student-centered financial aid counseling</span>
-                        </li>
-                        <li class="mt-3 flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
-                            <span class="-mt-px">Career services tailored to <span class="font-medium">you</span></span>
-                        </li>
-                        <li class="mt-3 flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
-                                <span class="-mt-px">Millions in scholarship opportunities</span>
-                        </li>
-                        <li class="mt-3 flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
-                                <span class="-mt-px">Programs designed with online in mind</span>
-                        </li>
-                        <li class="mt-3 flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
-                                <span class="-mt-px">State-of-the-art online course technology</span>
-                        </li>
-                    </ul>
-                </p>
-            </section>
-        </main>
-        
-    </div>
-    <footer id="campaign" class="form-context py-16 md:py-32 lg:py-64 w-full bg-gold-200 text-gold-900">
-        <div class="container flex">
-            <h2 class="uppercase leading-loose tracking-wide text-brown-500 font-medium text-4xl">Let's Keep in Touch</h2>
-        </div>          
-        <div class="container flex bg-gray-100 p-4 md:p-8 lg:p-16">
-            <div id="form_1fc2be6d-0300-4a61-afa2-aa3d9cb02991" class="form-context__form">Loading...</div><script async="async" src="https://apply.rowan.edu/register/?id=1fc2be6d-0300-4a61-afa2-aa3d9cb02991&amp;output=embed&amp;div=form_1fc2be6d-0300-4a61-afa2-aa3d9cb02991">/**/</script>
+<h2 class="text-3xl font-medium tracking-wide text-gold-900 md:mb-8">A Partnership Like No Other</h2>
+<p class="mb-2">What happens when one of the nation's top universities and New Jersey's #1 community college join forces? Rowan Online- that's what. Be delighted with top notch instructors, state-of-the-art education, and all at a price that will put a smile on your face.</p>
+<p class="mb-2">Start your education with faculty from the Best Community College in NJ and end your education at one of the nation's Top Universities. Rowan University and RCSJ are reimagining the world of online education. The future of online education is here; The question is: are you?</p>
+<div class="flex justify-center">
+    <div class="my-8 max-w-sm w-full lg:max-w-lg lg:flex rounded">
+        <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden shadow-lg" style="background-image: url('images/laptop-2838921.jpg')" title="Overhead view of a laptop on a desk">
         </div>
-    </footer>
-    <footer class="relative py-16 w-full bg-gold-500 text-white">
-        <div class="flex items-center justify-center font-bold uppercase text-xl my-4">© 2020 Rowan Online.</div>
-        <div class="text-center italic">Rowan Online is an exclusive partnership between <a href="https://rowan.edu">Rowan University </a> and <a href="https://rcsj.edu"> Rowan College of South Jersey</a>.</div>
-    </footer>
-</body>
-</html>
+        <div class="border-r border-b border-l border-gray-200 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal shadow-lg">
+            <div class="mb-8">
+            <div class="text-gray-900 font-bold text-xl mb-2">Programs Designed for You</div>
+            <p class="text-gray-700 text-base">With flexible 7-week courses, you can get the education you want at a pace that you'll love.</p>
+            <a href="#" class="mt-2 sm:ml-0 sm:mt-1 w-full sm:w-auto inline-flex items-center justify-center px-2 py-2 border border-transparent text-base leading-6 font-semibold rounded-md text-white bg-navy-500 shadow-sm hover:bg-navy-400 focus:outline-none focus:bg-navy-600 transition ease-in-out duration-150 xl:text-lg xl:py-1">
+                Apply Now →
+            </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="mb-4">
+
+<h2 class="text-3xl font-medium tracking-wide text-gold-900 md:mb-8">Options You'll Love</h2>
+<p class="mb-2">Some of the brightest minds have come together to make online courses that delight. Courses have been designed to fit your life and at seven weeks each, they are made to keep you on track and deliver the highest quality possible. Running on a state-of-the-art system, you can access your courses from your laptop, desktop, or phone anywhere in the world.</p>
+<p class="mb-2">Convenience doesn't stop outside the classroom, either. Student advisement has been reimagined to make it fast and efficient to get the help you need <span class="font-medium">when you need it</span>; It's faster and easier than ever to get the services you need with the support you deserve.</p>
+
+<hr class="mb-4">
+
+<h2 class="text-3xl font-medium tracking-wide text-gold-900 md:mb-8">Benefits, not Bare-Bones</h2>
+<p class="mb-2">Online education doesn't have to be bare-bones like at some other institutions. That's why Rowan Online gives you the benefits you deserve as a student.</p>
+<p>
+    <ul class="mt-4 list-none">
+        <li class="mt-3 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
+            <span class="-mt-px">Exceptional value at a budget-friendly price</span>
+        </li>
+        <li class="mt-3 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
+            <span class="-mt-px">Fast, efficient student advisement</span>
+        </li>
+        <li class="mt-3 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
+            <span class="-mt-px">Access to all RCSJ and Rowan University digital ammenities</span>
+        </li>
+        <li class="mt-3 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
+            <span class="-mt-px">Student-centered financial aid counseling</span>
+        </li>
+        <li class="mt-3 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
+            <span class="-mt-px">Career services tailored to <span class="font-medium">you</span></span>
+        </li>
+        <li class="mt-3 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
+                <span class="-mt-px">Millions in scholarship opportunities</span>
+        </li>
+        <li class="mt-3 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
+                <span class="-mt-px">Programs designed with online in mind</span>
+        </li>
+        <li class="mt-3 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
+                <span class="-mt-px">State-of-the-art online course technology</span>
+        </li>
+    </ul>
+</p>
+{% endblock %}
