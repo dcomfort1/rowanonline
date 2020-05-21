@@ -60,12 +60,15 @@ module.exports = {
                         loader: 'css-loader',
                         options: {
                             url: false, 
-                            sourceMap: true
+                            sourceMap: false
                         }
                     },
                     {
                         loader: 'postcss-loader',
                         options: {
+                            config: {
+                                path: 'postcss.config'
+                            },
                             plugins: () => [
                                 require('tailwindcss'),
                                 require('autoprefixer'),
@@ -73,7 +76,7 @@ module.exports = {
                                     preset: 'default',
                                 })
                             ],
-                            sourceMap: true
+                            sourceMap: false
                         }
                     }
                 ],
@@ -93,7 +96,7 @@ module.exports = {
     entry: ["./src/js/main.js", "./src/css/tailwind.css"],
     plugins: [
         new MiniCssExtractPlugin({
-          filename: 'bundled.css',
+          filename: 'public/build/css/bundled.css',
         }),
       ],
     output: {
