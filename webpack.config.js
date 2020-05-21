@@ -96,11 +96,11 @@ module.exports = {
     entry: ["./src/js/main.js", "./src/css/tailwind.css"],
     plugins: [
         new MiniCssExtractPlugin({
-          filename: 'public/build/css/bundled.css',
+          filename: 'bundled.css',
         }),
       ],
     output: {
         filename: 'bundled.js',
-        path: path.resolve(__dirname, 'public/build/js'),
+        path: __dirname + 'public/build/assets',
     },
 };
