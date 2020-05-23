@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ pagetitle }}| Rowan Online</title>
-    <link rel="stylesheet" href="public/build/tailwind.css">
+    <link rel="stylesheet" href="../assets/bundled.css">
 </head>
 <body class="border-t-8 border-gold-500 bg-white sidenavLayout min-h-screen">
-    {% include "partials/nav.html" %}
+    
     <div class="container flex md:px-8 min-h-screen">
-        <section class="relative w-full h-64 relative pb-2/3 hero-transparent">
-            <img class="rounded-lg md:rounded-none absolute h-full w-full object-cover" src="{{img}}" alt="{{alt}}">
-        </section>
+        {% include "partials/nav.html" %}
         <main class="flex-1">
-            <!-- {% include "partials/hero.html" %} -->
+            <section class="relative w-full h-64 relative pb-2/3 hero-transparent">
+                <img class="rounded-lg md:rounded-none absolute h-full w-full object-cover" src="{{img}}" alt="{{alt}}">
+            </section>
             
             <section class="md:mt-8 px-4 md:px-8 pb-4">
                 <h1 class="text-4xl font-medium tracking-wide text-gold-900 md:mb-8">
