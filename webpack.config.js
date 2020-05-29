@@ -101,6 +101,6 @@ module.exports = {
       ],
     output: {
         filename: 'bundled.js',
-        path: __dirname + 'public/build/assets',
+        path: __dirname + '/public/build/assets',
     },
 };
