@@ -8,9 +8,9 @@
 </head>
 <body class="border-t-8 border-gold-500 bg-white sidenavLayout min-h-screen">
     
-    <div class="container flex md:px-8 min-h-screen">
+    <div class="container flex flex-wrap md:px-8 min-h-screen">
         {% include "partials/nav.html" %}
-        <main class="flex-1">
+        <main class="flex-row md:flex-1 md:flex-col">
             <section class="relative w-full h-64 relative pb-2/3 hero-transparent">
                 <img class="rounded-lg md:rounded-none absolute h-full w-full object-cover" src="{{img}}" alt="{{alt}}">
             </section>
@@ -29,5 +29,6 @@
     </div>
     {% include "partials/rfi.html" %}
     {% include "partials/copyright.html" %}
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </body>
 </html>

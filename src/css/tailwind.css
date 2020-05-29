@@ -24,8 +24,8 @@
     }
 
     .sidenavLayout aside::after {
-        background: -webkit-gradient(linear,left bottom,left top,from(#fff),to(#F7FAFC));
-        background: linear-gradient(0deg,#fff,#F7FAFC);
+        background: -webkit-gradient(linear,left bottom,left top,from(#fff),to(#F7FAFC)) !important;
+        background: linear-gradient(0deg,#fff,#F7FAFC) !important;
         z-index: -1;
     }
     .sidenavLayout nav>ul>li {
