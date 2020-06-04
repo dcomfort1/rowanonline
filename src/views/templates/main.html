@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ pagetitle }}| Rowan Online</title>
+    <title>{{ pagetitle }} | Rowan Online</title>
     <link rel="stylesheet" href="../assets/bundled.css">
 </head>
 <body class="border-t-8 border-gold-500 bg-white sidenavLayout min-h-screen">
-    
-    <div class="container flex flex-wrap md:px-8 min-h-screen">
+    {% include "partials/ada.html" %}
+    <div class="container flex flex-wrap md:px-8 min-h-screen self-start">
         {% include "partials/nav.html" %}
-        <main class="flex-row md:flex-1 md:flex-col">
+        <main id="main" class="flex-row md:flex-1 md:flex-col">
             <section class="relative w-full h-64 relative pb-2/3 hero-transparent">
-                <img class="rounded-lg md:rounded-none absolute h-full w-full object-cover" src="{{img}}" alt="{{alt}}">
+                <img class="rounded md:rounded-none absolute h-full w-full object-cover" src="{{img}}" alt="{{alt}}">
             </section>
             
             <section class="md:mt-8 px-4 md:px-8 pb-4">

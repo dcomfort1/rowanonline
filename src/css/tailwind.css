@@ -39,6 +39,11 @@
         clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
         z-index: 2;
     }
+    #splash + #campaign {
+        position: relative;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        z-index: 2;
+    }
     #campaign::before {
         content: "";
         position: absolute;
@@ -119,7 +124,8 @@ div.form_page input, div.form_page label {
     vertical-align: middle;
 }
 
-.form-context__form label {
+.form-context__form label,
+.form-context__form legend {
     position: relative;
     width: 100%;
     padding-right: 7.5px;
@@ -136,12 +142,16 @@ div.form_page input, div.form_page label {
     margin-bottom: 8px;
 }
 
-.base-cta-primary--black:focus, .base-cta-primary--black:hover, .form-context__form button:focus, .form-context__form button:hover {
+.base-cta-primary--black:focus,
+.base-cta-primary--black:hover,
+.form-context__form button:focus,
+.form-context__form button:hover {
     color: #fff;
     background-color: #000;
 }
 
-.base-cta-primary--black, .form-context__form button {
+.base-cta-primary--black,
+.form-context__form button {
     font-family: t26-carbon,monospace;
     font-size: 16px;
     font-weight: 700;
@@ -164,8 +174,10 @@ div.form_page input, div.form_page label {
     -webkit-transition-timing-function: cubic-bezier(.4,0,.2,1);
     transition-timing-function: cubic-bezier(.4,0,.2,1);
 }
-
-.form-context__form input, .form-context__form select {
+ 
+/*  .form-context__form textarea */
+.form-context__form input,
+.form-context__form select {
     font-family: acumin-pro,sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -180,7 +192,47 @@ div.form_page input, div.form_page label {
     appearance: none;
 }
 
-div.form_page input[type=password], div.form_page input[type=text], div.form_page input[type=email], div.form_page input[type=tel], div.form_page input:not([type]), div.form_page select, div.form_page textarea {
+div.form_page input[type=password],
+div.form_page input[type=text],
+div.form_page input[type=email],
+div.form_page input[type=tel],
+div.form_page input:not([type]),
+div.form_page select,
+div.form_page textarea {
     box-sizing: border-box;
     max-width: 100%;
+}
+
+p.skip-link {
+  margin: 0;
+}
+
+p.skip-link a {
+    display: block;
+    width: 100%;
+    padding: 2px 0 3px 0;
+    text-align: center;
+    background-color: #CFD8E4;
+    color: #29568F;
+}
+
+p.skip-link a.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+p.skip-link a.sr-only-focusable:active,
+p.skip-link a.sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
 }
