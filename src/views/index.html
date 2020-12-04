@@ -3,55 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KBS9C8J');</script>
+  <!-- End Google Tag Manager -->
+
   <title>Rowan Partnerships Online</title>
   <link rel="stylesheet" href="../assets/bundled.css">
   {% include "partials/preconnect.html" %}
 </head>
 <body class="font-sans antialiased text-gray-900 bg-gold-500">
-  <div id="splash" class="relative min-h-screen bg-gold-500 lg:bg-gold-500">
-    <div class="hide lg:block absolute">
-      <video src="../images/Home_Work.mp4" autoplay muted loop></video>
+  {% include "partials/splash-ada.html" %}
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBS9C8J" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="splash" class="relative lg:min-h-screen bg-gold-500 lg:bg-gold-500">
+    <div class="hide w-full h-full lg:block absolute object-cover overflow-hidden">
+      <img class="min-h-full object-cover" src="../images/Bunce%20Daisy.jpg" alt="Bunce Hall with Black-Eyed Susan in front">
     </div>
-    <div class="relative min-h-screen lg:min-w-3xl xl:min-w-4xl lg:flex lg:items-center lg:justify-center lg:w-3/5 lg:py-20 lg:pl-8 lg:pr-8 bg-gold-500" id="main-wrapper">
+    
+    <div class="hide lg:m-8 xl:m-4 wl:m-16 lg:block absolute right-0 top-0 object-cover overflow-hidden">
+      <div class="container flex rounded-md bg-opacity-75 bg-white lg:p-4 xl:p-4 wl:p-6">
+        <div id="lg_dest" class=" lg:w-3/5 xl:w-full max-w-full">
+          <!-- Form gets moved here on large screens -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="relative lg:min-h-screen lg:min-w-3xl xl:min-w-4xl lg:flex lg:items-center lg:justify-center lg:w-2/5 xl:w-3/5 lg:py-20 lg:pl-8 lg:pr-8 bg-gold-500" id="main-wrapper">
       <div>
         <div class="px-6 pt-8 pb-12 md:max-w-3xl md:mx-auto lg:mx-0 lg:max-w-none lg:pt-0 lg:pb-16">
           <div class="flex items-center justify-between">
             <div>
-              <img class="h-24 lg:h-16 xl:h-24" src="../images/RowanOnline_power_reverse.png" alt="Rowan Online Logo Here">
+              <img class="h-24 lg:h-24 xl:h-32" src="../images/RowanOnline_power_reverse-bold.png" alt="Rowan Partnerships Online Logo Here">
             </div>
-            <div>
-              <a href="apply.html" class="text-sm font-semibold text-navy-900 focus:outline-none focus:underline">
-                Apply Now→
+            <div class="lg:hidden">
+              <a href="https://apply.rowan.edu/register/?id=cb0fcf0f-6cd4-44dd-974f-bc51184b1399" target="_blank" class="text-sm font-semibold text-navy-900 focus:outline-none focus:underline">
+                Apply Now →
               </a>
             </div>
           </div>
         </div>
         <div class="px-6 md:max-w-3xl md:mx-auto lg:mx-0 lg:max-w-none">
           <p class="text-sm font-semibold text-navy-900 uppercase tracking-wider">
-            Applications open to Freshman
+            Applications open to Freshmen
           </p>
           <h1 class="mt-3 text-3xl leading-9 font-semibold font-display text-white sm:mt-6 sm:text-4xl sm:leading-10 xl:text-5xl xl:leading-none">
-            An Online Bachelors Degree for
+            Get Your Bachelor's Degree Fully Online
             <br class="hide sm:inline">
-            <span class="text-navy-500">
-              less than $36,000
+            <span class="hide text-navy-500">
+              for less than $36,000
             </span>
           </h1>
           <p class="mt-2 text-lg leading-7 text-navy-800 sm:mt-3 sm:text-xl sm:max-w-xl xl:mt-4 xl:text-2xl xl:max-w-2xl">
-            A fully online degree offered through Rowan University and its Premiere Partner- Rowan College of South Jersey. A world-class education at your fingertips at a cost that'll put you ahead. Start as a freshman and get a fixed, affordable price for <strong>all four years</strong>.
+            Rowan University and Rowan College of South Jersey have partnered to offer fully online degree programs,
+            providing affordability, flexibility, safety, and convenience to incoming freshmen students.
           </p>
-          <div class="mt-6 sm:flex sm:mt-8 xl:mt-12">
-            <a href="about.html" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 border border-transparent text-base leading-6 font-semibold rounded-md text-gray-900 bg-white shadow-sm hover:text-gray-600 focus:outline-none focus:text-gray-600 transition ease-in-out duration-150 xl:text-lg xl:py-4">
-              Tell me more
+
+          <div id="desktop_only" class="hide lg:flex mt-6 sm:mt-8 xl:mt-12">
+            <a href="about.html"
+              class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 border border-transparent text-base leading-6 font-semibold rounded-md text-gray-900 bg-white shadow-sm hover:text-gray-600 focus:outline-none focus:text-gray-600 transition ease-in-out duration-150 xl:text-lg xl:py-4">
+              About RPO
             </a>
-            <a href="apply.html" class="mt-4 sm:ml-4 sm:mt-0 w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 border border-transparent text-base leading-6 font-semibold rounded-md text-white bg-navy-500 shadow-sm hover:bg-navy-400 focus:outline-none focus:bg-navy-600 transition ease-in-out duration-150 xl:text-lg xl:py-4">
+            <a href="https://apply.rowan.edu/register/?id=cb0fcf0f-6cd4-44dd-974f-bc51184b1399"
+              class="mt-4 sm:ml-4 sm:mt-0 w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 border border-transparent text-base leading-6 font-semibold rounded-md text-white bg-navy-500 shadow-sm hover:bg-navy-400 focus:outline-none focus:bg-navy-600 transition ease-in-out duration-150 xl:text-lg xl:py-4">
               Apply Now →
             </a>
           </div>
+
+          <div id="mobile_only" class="lg:hidden mt-6 sm:mt-8 xl:mt-12">
+            <a href="#form_1fc2be6d-0300-4a61-afa2-aa3d9cb02991"
+              class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 border border-transparent text-base leading-6 font-semibold rounded-md text-gray-900 bg-white shadow-sm hover:text-gray-600 focus:outline-none focus:text-gray-600 transition ease-in-out duration-150 xl:text-lg xl:py-4">
+              Get More Info
+            </a>
+            <a href="https://apply.rowan.edu/register/?id=cb0fcf0f-6cd4-44dd-974f-bc51184b1399"
+              class="mt-4 sm:ml-4 sm:mt-0 w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 border border-transparent text-base leading-6 font-semibold rounded-md text-white bg-navy-500 shadow-sm hover:bg-navy-400 focus:outline-none focus:bg-navy-600 transition ease-in-out duration-150 xl:text-lg xl:py-4">
+              Apply Now →
+            </a>
+          </div>
+          
+          
         </div>
         <div class="mt-8 sm:mt-12 relative h-64 bg-gray-300 lg:hide">
           <section class="relative w-full h-64 pb-2/3 hero-transparent">
-            <img class="absolute h-full w-full object-cover" src="https://sites.rowan.edu/bursar/_images/Bunce%20Daisy.jpg" alt="{unce Hall with Black-Eyed Susan in front">
+            <img class="absolute h-full w-full object-cover" src="../images/Bunce%20Daisy.jpg" alt="{unce Hall with Black-Eyed Susan in front">
           </section>
         </div>
         <div class="hide px-6 py-8 sm:pt-12 md:max-w-3xl md:mx-auto lg:mx-0 lg:max-w-full lg:py-0 lg:pt-24">
@@ -80,7 +122,241 @@
       </div>
     </div>
   </div>
-  {% include "partials/rfi.html" %}
+
+  <footer class="py-16 md:py-32 lg:py-64 w-full bg-gold-200 text-gold-900">
+    <div class="container flex justify-center">
+      <h2 class="uppercase leading-loose tracking-wide text-brown-500 font-medium text-4xl text-center">Attend an Info Session</h2>
+    </div>
+    <div class="container flex justify-around flex-wrap">
+      
+      <div class="my-8 max-w-xs w-full lg:max-w-sm lg:flex flex-col rounded hidden lg:hidden">
+        <div style="background-image: url('../images/peak-session.jpg')" title="Overhead view of a laptop on a desk"
+          class="h-48 lg:w-auto bg-cover rounded-t text-center overflow-hidden shadow-lg">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-200 bg-white rounded-b p-4 flex flex-col justify-between leading-normal shadow-lg">
+          <div class="mb-8">
+            <div class="uppercase tracking-wider text-navy-500 text-xs font-medium">Tue, Dec 1 at 11AM</div>
+            <div class="text-gray-900 font-bold text-xl mb-2">Reaching your PEAK in an Online Course</div>
+            <p class="text-gray-600 text-sm">Come and learn from the experts about how to prepare for and be successful in an
+              online course in this online webinar.</p>
+            <a href="https://apply.rowan.edu/register/?id=288c5ff7-5f1b-4c42-a529-a0b7a27a9e08"
+              class="mt-2 sm:ml-0 sm:mt-1 w-full sm:w-auto inline-flex items-center justify-center px-2 py-2 border border-transparent text-base leading-6 font-semibold rounded-md text-white bg-navy-500 shadow-sm hover:bg-navy-400 focus:outline-none focus:bg-navy-600 transition ease-in-out duration-150 xl:text-lg xl:py-1">
+              RSVP Now →
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="my-8 max-w-xs w-full lg:max-w-sm lg:flex flex-col rounded">
+        <div style="background-image: url('../images/peak-session.jpg')" title="Overhead view of a laptop on a desk"
+          class="h-48 lg:w-auto bg-cover rounded-t text-center overflow-hidden shadow-lg">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-200 bg-white rounded-b p-4 flex flex-col justify-between leading-normal shadow-lg">
+          <div class="mb-8">
+            <div class="uppercase tracking-wider text-navy-500 text-xs font-medium">Thu, Dec 3 at 7PM</div>
+            <div class="text-gray-900 font-bold text-xl mb-2">Reaching your PEAK in an Online Course</div>
+            <p class="text-gray-600 text-sm">Come and learn from the experts about how to prepare for and be successful in an
+              online course in this online webinar.</p>
+            <a href="https://apply.rowan.edu/register/?id=b89aa27f-fb86-4010-85de-7243855f55ee"
+              class="mt-2 sm:ml-0 sm:mt-1 w-full sm:w-auto inline-flex items-center justify-center px-2 py-2 border border-transparent text-base leading-6 font-semibold rounded-md text-white bg-navy-500 shadow-sm hover:bg-navy-400 focus:outline-none focus:bg-navy-600 transition ease-in-out duration-150 xl:text-lg xl:py-1">
+              RSVP Now →
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="my-8 max-w-xs w-full lg:max-w-sm lg:flex flex-col rounded">
+        <div style="background-image: url('../images/info-session.jpg')" title="Overhead view of a laptop on a desk"
+          class="h-48 lg:w-auto bg-cover rounded-t text-center overflow-hidden shadow-lg">
+        </div>
+        <div
+          class="border-r border-b border-l border-gray-200 bg-white rounded-b p-4 flex flex-col justify-between leading-normal shadow-lg">
+          <div class="mb-8">
+            <div class="uppercase tracking-wider text-navy-500 text-xs font-medium">Wed, Dec 9 at 7PM</div>
+            <div class="text-gray-900 font-bold text-xl mb-2">Rowan Partnerships Online Info Session</div>
+            <p class="text-gray-600 text-sm">Learn how you can earn an online Bachelor’s degree from the safety and comfort of
+              your home, for an affordable price.</p>
+            <a href="https://apply.rowan.edu/register/?id=918601ed-7eb3-4b1b-bd7f-4d7e0a34d6f9"
+              class="mt-2 sm:ml-0 sm:mt-1 w-full sm:w-auto inline-flex items-center justify-center px-2 py-2 border border-transparent text-base leading-6 font-semibold rounded-md text-white bg-navy-500 shadow-sm hover:bg-navy-400 focus:outline-none focus:bg-navy-600 transition ease-in-out duration-150 xl:text-lg xl:py-1">
+              RSVP Now →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <main id="main" class="py-16 md:py-32 lg:py-64 w-full bg-white">
+    <section class="px-4 md:px-8 container mx-auto">
+      <div class="md:flex">
+        <div class="area md:w-2/5 md:pl-4 md:pr-2">
+          <div class="bg-navy-100 border-l-4 border-navy-500 text-navy-900 p-4 my-8 rounded" role="alert">
+            <p class="font-bold">Saving You Money from the Start</p>
+            <p>Students enrolled in Rowan Partnerships Online get a low price for all four years. A state-of-the-art education
+              has never been more affordable!</p>
+          </div>
+          <p>
+            <h2
+              class="mt-3 text-2xl leading-9 font-semibold font-display text-navy-800 sm:mt-6 sm:text-4xl sm:leading-10 xl:text-5xl xl:leading-none">
+              Eligible Programs
+            </h2>
+            <ul class="mt-4 list-none">
+              <li class="mt-3 flex">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0">
+                  <circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle>
+                  <path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z"
+                    class="text-navy-600 fill-current"></path>
+                </svg>
+                <span class="-mt-px"><a href="entrepreneurship.html" class="underline text-blue">Entrepreneurship</a></span>
+              </li>
+              <li class="mt-3 flex hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0">
+                  <circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle>
+                  <path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z"
+                    class="text-navy-600 fill-current"></path>
+                </svg>
+                <span class="-mt-px"><a href="computing-informatics.html" class="underline text-blue">Computing Informatics</a></span>
+              </li>
+              <li class="mt-3 flex">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0">
+                  <circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle>
+                  <path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z"
+                    class="text-navy-600 fill-current"></path>
+                </svg>
+                <span class="-mt-px"><a href="construction-management.html" class="underline text-blue">Construction Management</a></span>
+              </li>
+              <li class="mt-3 flex">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0">
+                  <circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle>
+                  <path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z"
+                    class="text-navy-600 fill-current"></path>
+                </svg>
+                <span class="-mt-px"><a href="hr.html" class="underline text-blue">Human Resource Management</a></span>
+              </li>
+              <li class="mt-3 flex">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0">
+                  <circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle>
+                  <path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z"
+                    class="text-navy-600 fill-current"></path>
+                </svg>
+                <span class="-mt-px"><a href="mis.html" class="underline text-blue">Management Information Systems</a></span>
+              </li>
+              <li class="mt-3 flex">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0">
+                  <circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle>
+                  <path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z"
+                    class="text-navy-600 fill-current"></path>
+                </svg>
+                <span class="-mt-px"><a href="psychology.html" class="underline text-blue">Psychology</a></span>
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div class="area md:w-3/5 md:pl-2 md:pr-4">
+          <h1 class="text-4xl font-medium tracking-wide text-gold-900 md:mb-8">
+            About Rowan Partnerships Online
+          </h1>
+          
+          <p class="mb-4">Rowan University and Rowan College of South Jersey (RCSJ) have partnered to offer students fully online
+            degree
+            programs
+            at a fraction of the original cost. Upon completion of the program, students will have earned their 2-year RCSJ degree
+            and their 4-year Rowan University degree in their respective fields of study.</p>
+          
+          <hr class="mb-4">
+          
+          <h2 class="text-3xl font-medium tracking-wide text-gold-900 md:mb-8">A Partnership Like No Other</h2>
+          <p class="mb-2">What happens when one of the nation's top universities and New Jersey's #1 community college join
+            forces? Rowan Partnerships Online - that's what. Be delighted with top-notch instructors, state-of-the-art education, and all at a
+            price that will put a smile on your face.</p>
+          <p class="mb-2">Start your education with faculty from the Best Community College in NJ and end your education at one of
+            the nation's Top Universities. Rowan University and RCSJ are reimagining the world of online education. The future of
+            online education is here; the question is: are you?</p>
+          
+          <div class="flex justify-center">
+            <div class="my-8 max-w-sm w-full lg:max-w-lg lg:flex rounded">
+              <div
+                class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden shadow-lg"
+                style="background-image: url('../images/laptop-2838921.jpg')" title="Overhead view of a laptop on a desk">
+              </div>
+              <div
+                class="border-r border-b border-l border-gray-200 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal shadow-lg">
+                <div class="mb-8">
+                  <div class="text-gray-900 font-bold text-xl mb-2">Programs Designed for You</div>
+                  <p class="text-gray-700 text-base">With flexible 7-week courses, you can get the education you want at a pace
+                    that you'll love.</p>
+                  <a href="about.html"
+                    class="mt-2 sm:ml-0 sm:mt-1 w-full sm:w-auto inline-flex items-center justify-center px-2 py-2 border border-transparent text-base leading-6 font-semibold rounded-md text-white bg-navy-500 shadow-sm hover:bg-navy-400 focus:outline-none focus:bg-navy-600 transition ease-in-out duration-150 xl:text-lg xl:py-1">
+                    About RPO →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+
+  <div id="splash-rfi" class="block lg:hidden">
+    {% include "partials/rfi.html" %}
+  </div>
   {% include "partials/copyright.html" %}
+  <script>
+    // Define our viewportWidth variable
+      let viewportWidth;
+      const formElement = document.querySelector('#form_1fc2be6d-0300-4a61-afa2-aa3d9cb02991');
+      const std_dest = document.querySelector("#std_dest");
+      const lg_dest = document.querySelector("#lg_dest");
+
+      // Set/update the viewportWidth value
+      let setViewportWidth = function () {
+        viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+      }
+
+      // Log the viewport width into the console
+      let logWidth = function () {
+        if (viewportWidth > 991) {
+          console.log('Wide viewport');
+        } else {
+          console.log('Small viewport');
+        }
+      }
+
+      
+      setViewportWidth();
+      logWidth();
+
+      let moveForm = function () {
+        if (viewportWidth > 991) {
+          if (!lg_dest.contains(formElement)) {
+            lg_dest.appendChild(formElement);
+            return;
+          } else {
+            return;
+          }
+        } else {
+          if (!std_dest.contains(formElement)) {
+            std_dest.appendChild(formElement);
+            return;
+          } else {
+            return;
+          }
+        }
+      }
+      
+      window.addEventListener('resize', function () {
+        setViewportWidth();
+        logWidth();
+        moveForm();
+      }, false);
+
+      window.addEventListener('load', function () {
+          setViewportWidth();
+          logWidth();
+          moveForm();
+        }, false);
+  </script>
 </body>
 </html>

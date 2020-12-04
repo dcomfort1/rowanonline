@@ -37,12 +37,23 @@ module.exports = {
           800: '#AF8F2C',
           900: '#221902',
         },
+        'harvest': {
+          100: '#FFEEBD',
+          200: '#FFDC69',
+          700: '#F2A900',
+          800: '#DE7C00',
+        },
         'brown': {
+          200: '#DCBFA6',
+          300: '#AD7C59',
+          400: '#88431E',
           500: '#57150B',
         }
       },
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

@@ -3,15 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ pagetitle }} | Rowan Online</title>
+    <title>{{ pagetitle }} | Rowan Partnerships Online</title>
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KBS9C8J');</script>
+    <!-- End Google Tag Manager -->
     <link rel="stylesheet" href="../assets/bundled.css">
     {% include "partials/preconnect.html" %}
 </head>
 <body class="border-t-8 border-gold-500 bg-white sidenavLayout min-h-screen">
     {% include "partials/ada.html" %}
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBS9C8J" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="container flex flex-wrap md:px-8 min-h-screen self-start">
         {% include "partials/nav.html" %}
-        <main id="main" class="flex-row md:flex-1 md:flex-col">
+        <main id="main" class="flex-row lg:flex-1 lg:flex-col">
             <section class="relative w-full h-64 relative pb-2/3 hero-transparent">
                 <img class="rounded md:rounded-none absolute h-full w-full object-cover" src="{{img}}" alt="{{alt}}">
             </section>

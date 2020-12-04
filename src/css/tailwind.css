@@ -1,16 +1,25 @@
 @tailwind base;
 @tailwind components;
 
+@screen wl {
+    .wl\:max-w-18 {
+        max-width: 18rem;
+    }
+}
+
+@screen xl{
+    .lg\:max-w-16 {
+        max-width: 16rem;
+    }
+}
+
 @screen lg {
     #main-wrapper {
         clip-path: polygon(0px 0px, 90% 0px, 100% 100%, 0px 100%);
     }
-}
 
-@screen md {
-    .form-context__form label {
-        font-size: 16px;
-        letter-spacing: .14062rem;
+    .lg\:max-w-12 {
+        max-width: 12rem;
     }
 
     .sidenavLayout aside {
@@ -31,6 +40,15 @@
     .sidenavLayout nav>ul>li {
         padding: 1rem 0;
     }
+    
+}
+
+@screen md {
+    .form-context__form label {
+        font-size: 16px;
+        letter-spacing: .14062rem;
+    }
+
     .hero-transparent img {
         mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 95%, transparent 100%);
     }
@@ -39,7 +57,7 @@
         clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
         z-index: 2;
     }
-    #splash + #campaign {
+    #splash-rfi #campaign {
         position: relative;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         z-index: 2;
@@ -108,6 +126,11 @@ html {
     height: 188px;
 }
 
+.pinstripe {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffcc00' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
 .collection-links.collection-links--dark {
     fill: #57150b;
 }
@@ -128,18 +151,18 @@ div.form_page input, div.form_page label {
 .form-context__form legend {
     position: relative;
     width: 100%;
-    padding-right: 7.5px;
-    padding-left: 7.5px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
     display: flex;
     flex-direction: column;
-    margin-top: 32px;
+    margin-top: 0.5rem;
     font-family: t26-carbon,monospace;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 700;
-    line-height: 18px;
+    line-height: 1.5rem;
     text-transform: uppercase;
     letter-spacing: .125rem;
-    margin-bottom: 8px;
+    margin-bottom: 0.3rem;
 }
 
 .base-cta-primary--black:focus,
@@ -153,19 +176,19 @@ div.form_page input, div.form_page label {
 .base-cta-primary--black,
 .form-context__form button {
     font-family: t26-carbon,monospace;
-    font-size: 16px;
+    font-size: 1.25rem;
     font-weight: 700;
     line-height: 1;
     letter-spacing: .13437rem;
     text-transform: uppercase;
     display: block;
     width: 100%;
-    padding: 15px 32px;
-    margin-top: 20px;
+    padding: 1rem 1.5rem;
+    margin-top: 1.125rem;
     color: #000;
     text-align: center;
-    border: 1.5px solid #000;
-    border-radius: 9999px;
+    border: 2pt solid #000;
+    border-radius: 2em;
     background-color: transparent;
     -webkit-transition-property: color,background-color;
     transition-property: color,background-color;
@@ -181,11 +204,11 @@ div.form_page input, div.form_page label {
     font-family: acumin-pro,sans-serif;
     font-size: 15px;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 1.5rem;
     letter-spacing: .0375rem;
-    padding: 16px;
-    font-size: 16px;
-    border: 1.5px solid #000;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2pt solid #000;
     border-radius: 0;
     -webkit-appearance: none;
     -moz-appearance: none;

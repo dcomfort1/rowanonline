@@ -1,13 +1,13 @@
-<aside x-data="{ open: false }" class="sticky md:relative z-10 top-0 self-start md:self-auto flex-1 md:flex-none shadow-xl md:shadow-none">
-    <section class="sticky md:relative flex flex-row justify-between md:block md:flex-col px-2 py-4 md:pl-0 w-full md:w-64 top-0">
-        <a class="z-10 md:px-8 px-4" href="index.html">
-            <img class="hide md:block h-24 lg:h-16 xl:h-24" src="../images/RowanOnline_power.png"
+<aside x-data="{ open: false }" class="sticky lg:relative z-10 top-0 self-start lg:self-auto flex-1 lg:flex-none shadow-xl lg:shadow-none">
+    <section class="sticky lg:relative flex flex-row justify-between lg:block lg:flex-col px-2 py-4 lg:pl-0 w-full lg:w-64 top-0">
+        <a class="z-10 lg:px-8 px-4" href="index.html">
+            <img class="hide lg:block h-24 lg:h-16 xl:h-24" src="../images/RowanOnline_power.png"
                 alt="Rowan Online logo in which the O of Online is a power button">
-            <img class="md:hide h-8" src="../images/RowanOnline_power_initials.png"
+            <img class="lg:hide h-8" src="../images/RowanOnline_power_initials.png"
                 alt="Rowan Online logo in which the O of Online is a power button">
         </a>
-        <nav class="px-4 md:px-0 md:sticky md:w-64">
-            <button class="rounded md:hidden rounded focus:bg-gold-500 active:bg-gold-500 focus:outline-none focus:shadow-outline" @click="open = !open">
+        <nav class="px-4 lg:px-0 lg:sticky lg:w-64">
+            <button class="rounded lg:hidden rounded focus:bg-gold-500 active:bg-gold-500 focus:outline-none focus:shadow-outline" @click="open = !open">
                 <svg role="img" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" class="inline h-8">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
@@ -25,7 +25,7 @@
             </button>
         </nav>
     </section>
-    <nav :class="{'block': open, 'hidden': !open}" @click.away="open = false" class="flex-grow md:block">
+    <nav :class="{'block': open, 'hidden': !open}" @click.away="open = false" class="flex-grow lg:block">
         <ul id="navigation" class="text-md font-semibold text-gray-900 uppercase tracking-wider leading-loose">
             <li>
                 <a href="index.html">
@@ -41,7 +41,7 @@
                             </g>
                         </g>
                     </svg>
-                    <span class="md:inline-block">Home</span>
+                    <span class="lg:inline-block">Home</span>
                 </a>
             </li>
             <li>
@@ -58,7 +58,7 @@
                             </g>
                         </g>
                     </svg>
-                    <span class="md:inline-block">About Rowan Online</span>
+                    <span class="lg:inline-block">About Us</span>
                 </a>
             </li>
             <li>
@@ -74,14 +74,14 @@
                         </g>
                     </g>
                 </svg>
-                <span class="md:inline-block dd__heading">Programs</span>
-                <ul class="pl-1 md:block md:pl-4 text-sm font-normal text-gray-700 normal-case leading-slug tracking-wide">
-                    <li>Entrepreneurship</li>
-                    <li>Computing Informatics</li>
-                    <li>Construction Management</li>
-                    <li><a href="hr.html">Human Resource Management</a></li>
-                    <li>Management Information Systems</li>
-                    <li>Psychology</li>
+                <span class="lg:inline-block dd__heading">Programs</span>
+                <ul class="pl-1 lg:block lg:pl-4 text-sm font-normal text-gray-700 normal-case leading-slug tracking-wide">
+                    <li><a href="entrepreneurship.html" class="hover:underline">Entrepreneurship</a></li>
+                    <li><a href="computing-informatics.html" class="hidden hover:underline">Computing Informatics</a></li>
+                    <li><a href="construction-management.html" class="hover:underline">Construction Management</a></li>
+                    <li><a href="hr.html" class="hover:underline">Human Resource Management</a></li>
+                    <li><a href="mis.html" class="hover:underline">Management Information Systems</a></li>
+                    <li><a href="psychology.html" class="hover:underline">Psychology</a></li>
                 </ul>
             </li>
             <li>
@@ -98,10 +98,28 @@
                             </g>
                         </g>
                     </svg>
-                    <span class="md:inline-block">Admissions</span>
+                    <span class="lg:inline-block">Admissions</span>
                 </a>
             </li>
             <li>
+                <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+                    xmlns:xlink="http://www.w3.org/1999/xlink" class="inline h-3">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                        class="text-gray-900 fill-current">
+                        <g id="icon-shape">
+                            <path
+                                d="M14,11 L8.00585866,11 C6.89706013,11 6,10.1081436 6,9.00798298 L6,1.99201702 C6,0.900176167 6.89805351,0 8.00585866,0 L17.9941413,0 C19.1029399,0 20,0.891856397 20,1.99201702 L20,9.00798298 C20,10.0998238 19.1019465,11 17.9941413,11 L17,11 L17,14 L14,11 Z M14,13 L14,15.007983 C14,16.1081436 13.1029399,17 11.9941413,17 L6,17 L3,20 L3,17 L2.00585866,17 C0.898053512,17 0,16.0998238 0,15.007983 L0,7.99201702 C0,6.8918564 0.897060126,6 2.00585866,6 L4,6 L4,8.99349548 C4,11.2060545 5.78916089,13 7.99620271,13 L14,13 Z"
+                                id="Combined-Shape"></path>
+                        </g>
+                    </g>
+                </svg>
+                <span class="lg:inline-block dd__heading">Appointments</span>
+                <ul class="pl-1 lg:block lg:pl-4 text-sm font-normal text-gray-700 normal-case leading-slug tracking-wide">
+                    <li><a href="https://outlook.office365.com/owa/calendar/RowanUniversityCenter@rowancollegesj.onmicrosoft.com/bookings/s/U3wR9lJJqUm9C3IGBBVq-Q2" target="_blank" class="hover:underline">RPO One-on-One</a></li>
+                    <li><a href="https://outlook.office365.com/owa/calendar/RowanUniversityCenter@rowancollegesj.onmicrosoft.com/bookings/s/QqyHLvoWcUyJemwqVjUKEw2" target="_blank" class="hover:underline">RPO Advising</a></li>
+                </ul>
+            </li>
+            <li class="hidden" aria-hidden="true">
                 <a href="#">
                     <svg role="img" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" class="inline h-3">
@@ -115,7 +133,7 @@
                             </g>
                         </g>
                     </svg>
-                    <span class="md:inline-block">Paying for College</span>
+                    <span class="lg:inline-block">Paying for College</span>
                 </a>
             </li>
         </ul>
