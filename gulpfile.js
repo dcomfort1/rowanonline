@@ -31,7 +31,7 @@ function makeSitemap(cb)
     return gulp.src('public/build/app/*.html', {
         read: false
     })
-    .pipe(sitemap({siteUrl: 'https://rowanpartnerships.online'}))
+    .pipe(sitemap({siteUrl: 'https://www.rowanpartnerships.online'}))
     .pipe(gulp.dest('public/build/app'))
 }
 
