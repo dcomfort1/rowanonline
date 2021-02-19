@@ -1,0 +1,261 @@
+@tailwind base;
+@tailwind components;
+
+@screen wl {
+    .wl\:max-w-18 {
+        max-width: 18rem;
+    }
+}
+
+@screen xl{
+    .lg\:max-w-16 {
+        max-width: 16rem;
+    }
+}
+
+@screen lg {
+    #main-wrapper {
+        clip-path: polygon(0px 0px, 90% 0px, 100% 100%, 0px 100%);
+    }
+
+    .lg\:max-w-12 {
+        max-width: 12rem;
+    }
+
+    .sidenavLayout aside {
+        overflow: visible;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background: none;
+        height: 100vh;
+        z-index: 0;
+    }
+
+    .sidenavLayout aside::after {
+        background: -webkit-gradient(linear,left bottom,left top,from(#fff),to(#F7FAFC)) !important;
+        background: linear-gradient(0deg,#fff,#F7FAFC) !important;
+        z-index: -1;
+    }
+    .sidenavLayout nav>ul>li {
+        padding: 1rem 0;
+    }
+    
+}
+
+@screen md {
+    .form-context__form label {
+        font-size: 16px;
+        letter-spacing: .14062rem;
+    }
+
+    .hero-transparent img {
+        mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 95%, transparent 100%);
+    }
+    #campaign {
+        position: relative;
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+        z-index: 2;
+    }
+    #splash-rfi #campaign {
+        position: relative;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        z-index: 2;
+    }
+    #campaign::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0 90%, 100% 100%, 0 100%);
+        background: #57150b;
+        z-index: -1;
+    }
+    .collection-links__texture {
+        top: 15px;
+        right: 15px;
+    }
+
+    .form-context--reversed::after, .form-context::after {
+        z-index: -1;
+    }
+    .form-context--reversed::after, .form-context::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://admissions.rowan.edu/svgs/texture-form-context.svg);
+        background-size: auto 100%;
+        background-position: 50% 50%;
+        content: "";
+        opacity: 0.25;
+    }
+}
+
+@tailwind utilities;
+
+@responsive {
+    .hide {
+        display: none;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.sidenavLayout aside::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 999em;
+    height: 100%;
+    background: #F7FAFC;
+    z-index: -1;
+}
+
+.collection-links__texture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 248px;
+    height: 188px;
+}
+
+.pinstripe {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffcc00' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.collection-links.collection-links--dark {
+    fill: #57150b;
+}
+
+div.form_question .form_label, div.form_question label {
+    display: block;
+}
+
+.form-context__form label.form_label {
+    padding-left: 0;
+}
+
+div.form_page input, div.form_page label {
+    vertical-align: middle;
+}
+
+.form-context__form label,
+.form-context__form legend {
+    position: relative;
+    width: 100%;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    font-family: t26-carbon,monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+    margin-bottom: 0.3rem;
+}
+
+.base-cta-primary--black:focus,
+.base-cta-primary--black:hover,
+.form-context__form button:focus,
+.form-context__form button:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.base-cta-primary--black,
+.form-context__form button {
+    font-family: t26-carbon,monospace;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: .13437rem;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    margin-top: 1.125rem;
+    color: #000;
+    text-align: center;
+    border: 2pt solid #000;
+    border-radius: 2em;
+    background-color: transparent;
+    -webkit-transition-property: color,background-color;
+    transition-property: color,background-color;
+    -webkit-transition-duration: .25s;
+    transition-duration: .25s;
+    -webkit-transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+ 
+/*  .form-context__form textarea */
+.form-context__form input,
+.form-context__form select {
+    font-family: acumin-pro,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: .0375rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2pt solid #000;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+div.form_page input[type=password],
+div.form_page input[type=text],
+div.form_page input[type=email],
+div.form_page input[type=tel],
+div.form_page input:not([type]),
+div.form_page select,
+div.form_page textarea {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+p.skip-link {
+  margin: 0;
+}
+
+p.skip-link a {
+    display: block;
+    width: 100%;
+    padding: 2px 0 3px 0;
+    text-align: center;
+    background-color: #CFD8E4;
+    color: #29568F;
+}
+
+p.skip-link a.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+p.skip-link a.sr-only-focusable:active,
+p.skip-link a.sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+}

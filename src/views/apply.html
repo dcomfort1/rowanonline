@@ -1,0 +1,50 @@
+{% extends "main.html" %}
+{% set pagetitle = "Apply Now" %}
+{% set img = "https://sites.rowan.edu/bursar/_images/Bunce%20Daisy.jpg" %}
+{% set alt = "Bunce Hall with Black-Eyed Susan in front" %}
+
+{% block title %}
+How to Apply
+{% endblock %}
+
+{% block contents %}
+<p>
+    <ul class="mt-4 list-none">
+        <li class="mt-3 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
+            <span class="-mt-px">Complete the Rowan Online Application</span>
+        </li>
+        <li class="mt-3 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
+            <span class="-mt-px">Send forms such as high school or college transcripts</span>
+        </li>
+        <li class="mt-3 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
+            <span class="-mt-px">Apply for <a href="https://studentaid.gov/h/apply-for-aid/fafsa" target="_blank">Financial Aid</a></span><span class="uppercase text-light text-gray-500 inline-block px-4">(FAFSA Code 006901)</span>
+        </li>
+        <li class="mt-3 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
+            <span class="-mt-px">Complete online orientation</span>
+        </li>
+        <li class="mt-3 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
+            <span class="-mt-px">Pay your semester bill</span>
+        </li>
+        <li class="mt-3 flex">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 mt-px mr-3 flex-shrink-0"><circle cx="12" cy="12" r="10" class="text-navy-200 fill-current"></circle><path d="M10 14.59l6.3-6.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 1.4-1.42l2.3 2.3z" class="text-navy-600 fill-current"></path></svg>
+                <span class="-mt-px">Get your textbooks</span>
+        </li>
+    </ul>
+</p>
+
+<hr class="hide my-4">
+
+<div class="my-4 md:my-8">
+    <a href="https://apply.rowan.edu/register/?id=cb0fcf0f-6cd4-44dd-974f-bc51184b1399" class="mt-4 sm:ml-4 sm:mt-0 w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 border border-transparent text-base leading-6 font-semibold rounded-md text-white bg-navy-500 shadow-sm hover:bg-navy-400 focus:outline-none focus:bg-navy-600 transition ease-in-out duration-150 xl:text-lg xl:py-4">
+        Start Your Application →
+    </a>
+</div>
+<style>
+    #appAction {display: none;}
+</style>
+{% endblock %}
