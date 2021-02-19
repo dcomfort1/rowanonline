@@ -22,18 +22,23 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBS9C8J" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div class="container flex flex-wrap md:px-8 min-h-screen self-start">
+    <div class="container flex flex-wrap md:px-8 lg:min-h-screen self-start">
         {% include "partials/nav.html" %}
-        <main id="main" class="flex-row lg:flex-1 lg:flex-col">
+        <main id="main" class="flex-row lg:flex-1 lg:flex-col w-full lg:w-auto">
             <section class="relative w-full h-64 relative pb-2/3 hero-transparent">
                 <img class="rounded md:rounded-none absolute h-full w-full object-cover" src="{{img}}" alt="{{alt}}">
             </section>
             
             <section class="md:mt-8 px-4 md:px-8 pb-4">
-                <h1 class="text-4xl font-medium tracking-wide text-gold-900 md:mb-8">
-                    {% block title %}
-                    {% endblock %}
-                </h1>
+                <div class="flex flex-col justify-between items-center md:flex-row mb-4 md:mb-8">
+                    <h1 class="text-4xl font-medium tracking-wide text-gold-900 mb-8 md:mb-0 max-w-screen-md">
+                        {% block title %}
+                        {% endblock %}
+                    </h1>
+                    {% include "partials/actions.html" %}
+                </div>
+                
+                
 
                {% block contents %}
                {% endblock %}

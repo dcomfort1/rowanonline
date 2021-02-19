@@ -6,7 +6,8 @@
   "scripts": {
     "build": "gulp",
     "assets": "gulp assets",
-    "markup": "gulp markup"
+    "markup": "gulp markup",
+    "sitemap": "gulp makeSitemap"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "@fullhuman/postcss-purgecss": "^2.2.0",
     "css-loader": "^3.5.3",
     "gulp-nunjucks-render": "^2.2.3",
+    "gulp-sitemap": "^8.0.0",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
